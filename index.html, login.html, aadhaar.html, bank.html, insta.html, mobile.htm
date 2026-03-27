@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Welcome - Key Page</title>
+<style>
+  body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f0f8ff; }
+  h1 { color: #333; }
+  a { font-size: 20px; text-decoration: none; color: #007bff; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <h1>Welcome to Your Secure Portal 🔐</h1>
+  <p>This is the starting page.</p>
+  <a href="login.html">Go to Login Page</a>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login Page</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #fff8dc; padding: 30px; max-width: 400px; margin: auto; }
+  h2 { text-align: center; color: #333; }
+  label, input { display: block; width: 100%; margin-bottom: 15px; }
+  input { padding: 8px; font-size: 16px; }
+  button { background: #007bff; color: white; border: none; padding: 10px; width: 100%; font-size: 18px; cursor: pointer; }
+  button:hover { background: #0056b3; }
+</style>
+</head>
+<body>
+  <h2>Login</h2>
+  <form onsubmit="return validateLogin()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" required />
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" required />
+    
+    <button type="submit">Login</button>
+  </form>
+
+  <script>
+    function validateLogin() {
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      // Simple dummy validation
+      if(user === 'admin' && pass === '1234') {
+        alert('Login successful!');
+        window.location.href = 'aadhaar.html';
+      } else {
+        alert('Invalid username or password');
+      }
+      return false; // Prevent actual form submission
+    }
+  </script>
+</body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aadhaar Info</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+  nav { margin-bottom: 20px; }
+  nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
+  nav a:hover { text-decoration: underline; }
+  h2 { color: #333; }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="aadhaar.html">Aadhaar</a>
+    <a href="bank.html">Bank</a>
+    <a href="insta.html">Instagram</a>
+    <a href="mobile.html">Mobile</a>
+  </nav>
+  <h2>Aadhaar Details</h2>
+  <p>This section contains Aadhaar related information and features.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bank Info</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+  nav { margin-bottom: 20px; }
+  nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
+  nav a:hover { text-decoration: underline; }
+  h2 { color: #333; }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="aadhaar.html">Aadhaar</a>
+    <a href="bank.html">Bank</a>
+    <a href="insta.html">Instagram</a>
+    <a href="mobile.html">Mobile</a>
+  </nav>
+  <h2>Bank Account Details</h2>
+  <p>This section contains bank account related information and features.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Instagram Info</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+  nav { margin-bottom: 20px; }
+  nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
+  nav a:hover { text-decoration: underline; }
+  h2 { color: #333; }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="aadhaar.html">Aadhaar</a>
+    <a href="bank.html">Bank</a>
+    <a href="insta.html">Instagram</a>
+    <a href="mobile.html">Mobile</a>
+  </nav>
+  <h2>Instagram Details</h2>
+  <p>This section contains Instagram related information and features.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mobile Info</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+  nav { margin-bottom: 20px; }
+  nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
+  nav a:hover { text-decoration: underline; }
+  h2 { color: #333; }
+</style>
+</head>
+<body>
+  <nav>
+    <a href="aadhaar.html">Aadhaar</a>
+    <a href="bank.html">Bank</a>
+    <a href="insta.html">Instagram</a>
+    <a href="mobile.html">Mobile</a>
+  </nav>
+  <h2>Mobile Details</h2>
+  <p>This section contains mobile related information and features.</p>
+</body>
+</html>
+</html>
